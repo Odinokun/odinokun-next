@@ -27,20 +27,18 @@ export const Aside: FC = () => {
               isDisabled,
             }) => {
               return (
-                <>
-                  {isAvailable && <li key={id} className={styles.aside__item}>
-                    <Link
-                      href={path}
-                      className={`${styles.aside__link}
+                isAvailable && <li key={id} className={styles.aside__item}>
+                  <Link
+                    href={path}
+                    className={`${styles.aside__link}
                       ${pathname === path ? styles.active : ''}
                       ${isDisabled ? styles.disabled : ''}
                       `}
-                    >
-                      {Icon && <AsideIcon icon={Icon} />}
-                      {label}
-                    </Link>
-                  </li>}
-                </>
+                  >
+                    {Icon && <AsideIcon icon={Icon} />}
+                    {label}
+                  </Link>
+                </li>
               );
             },
           )

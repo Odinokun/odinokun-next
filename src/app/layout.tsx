@@ -1,5 +1,8 @@
 import type { Metadata } from 'next';
 import { Kaushan_Script, Oswald, Roboto_Condensed, Teko } from 'next/font/google';
+
+import { Aside } from '@/common/components/Aside/Aside';
+
 import './globals.scss';
 
 const kaushanScript = Kaushan_Script({ subsets: ['latin'], weight: '400', variable: '--font-kaushan' });
@@ -30,7 +33,12 @@ export default function RootLayout({
         ${robotoCondensed.variable}
         ${teko.variable}`}
     >
-    <body>{children}</body>
+    <body>
+      <Aside />
+      <main>
+        {children}
+      </main>
+    </body>
     </html>
   );
 }
