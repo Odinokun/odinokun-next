@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Kaushan_Script, Oswald, Roboto_Condensed, Teko } from 'next/font/google';
-import './globals.css';
+import './globals.scss';
 
 const kaushanScript = Kaushan_Script({ subsets: ['latin'], weight: '400', variable: '--font-kaushan' });
 const oswald = Oswald({ subsets: ['latin'], variable: '--font-oswald' });

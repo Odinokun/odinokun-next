@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { Aside } from '@/shared/components/Aside/Aside';
+import { Aside } from '@/common/components/Aside/Aside';
 
 export default function DashboardLayout(
   { children }: { children: ReactNode },
