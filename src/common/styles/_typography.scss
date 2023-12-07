@@ -1,0 +1,51 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-oswald);
+  font-weight: 400;
+  margin: 0;
+}
+
+h1 {
+  @include responsive-font(35, 70);
+}
+
+h2 {
+  @include responsive-font(30, 60);
+}
+
+h3 {
+  @include responsive-font(25, 50);
+}
+
+h4 {
+  @include responsive-font(20, 40);
+}
+
+p {
+  margin: 0 0 10px 0;
+
+  strong {
+    font-weight: 500;
+  }
+}
+
+a {
+  transition: text-decoration-color .3s ease-in-out;
+  text-decoration-color: var(--highlight);
+  color: var(--highlight);
+
+  &:hover {
+    text-decoration-color: transparent;
+  }
+}
+
+ol,
+ul {
+  li {
+    padding: 0;
+  }
+}
