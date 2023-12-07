@@ -1,18 +1,12 @@
 import { v4 as uuidv4 } from 'uuid';
-
-import Home from '@/assets/icons/menu-icons/home.svg';
-import CV from '@/assets/icons/menu-icons/cv.svg';
-import Works from '@/assets/icons/menu-icons/works.svg';
-import Blog from '@/assets/icons/menu-icons/blog.svg';
-import Contacts from '@/assets/icons/menu-icons/contacts.svg';
-
+import { HomeIcon, CvIcon, WorksIcon, BlogIcon, ContactsIcon } from '@/common/components/NavIcons/NavIcons';
 import { IconType } from 'react-icons';
 
 interface RoutType {
   id: string;
   path: string;
   label: string;
-  available: boolean;
+  isAvailable: boolean;
   icon: null | IconType;
   isDisabled: boolean;
 }
@@ -30,40 +24,40 @@ export const ROUTES: RoutType[] = [
     id: uuidv4(),
     path: ROUTING_PATHES.HOME,
     label: 'Home',
-    available: false,
-    icon: Home,
+    isAvailable: true,
+    icon: HomeIcon,
     isDisabled: false,
   },
   {
     id: uuidv4(),
     path: ROUTING_PATHES.CV,
     label: 'CV',
-    available: false,
-    icon: CV,
+    isAvailable: true,
+    icon: CvIcon,
     isDisabled: false,
   },
   {
     id: uuidv4(),
     path: ROUTING_PATHES.WORKS,
     label: 'Works',
-    available: true,
-    icon: Works,
-    isDisabled: false,
+    isAvailable: true,
+    icon: WorksIcon,
+    isDisabled: true,
   },
   {
     id: uuidv4(),
     path: ROUTING_PATHES.BLOG,
     label: 'Blog',
-    available: true,
-    icon: Blog,
+    isAvailable: true,
+    icon: BlogIcon,
     isDisabled: false,
   },
   {
     id: uuidv4(),
     path: ROUTING_PATHES.CONTACTS,
     label: 'Contacts',
-    available: true,
-    icon: Contacts,
+    isAvailable: true,
+    icon: ContactsIcon,
     isDisabled: false,
   },
 ];
