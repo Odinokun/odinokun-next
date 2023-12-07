@@ -1,0 +1,57 @@
+:root {
+  --dark: #1e1e1e;
+  --light: #fdf9f3;
+  --grey: #808080;
+  --highlight: #ffb100;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+html {
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.38;
+  letter-spacing: .25px;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+main {
+  min-height: 100vh;
+  padding-left: 90px;
+  display: flex;
+}
+
+svg {
+  display: block;
+  overflow: visible;
+}
+
+::selection {
+  color: var(--dark);
+  background-color: var(--highlight);
+  text-shadow: none;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
