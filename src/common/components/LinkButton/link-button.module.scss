@@ -66,6 +66,7 @@
 /* end   WRAPPER */
 .linkButton {
   font-size: 16px;
+  font-weight: 400;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -75,6 +76,7 @@
   transition: all .5s;
   white-space: nowrap;
   text-decoration: none;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
 
   &:before,

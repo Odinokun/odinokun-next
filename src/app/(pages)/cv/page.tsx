@@ -1,8 +1,12 @@
+import { PageHeader } from '@/common/components/PageHeader/PageHeader';
+
 export default function CvPage () {
   return (
     <>
-      <h1 className={'kaushan'}>Kaushanz CV</h1>
-      <h1 className={'teko'}>Teko CV!</h1>
+      <PageHeader title={'My CV'} />
+      <section>
+      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, pariatur.</h2>
+      </section>
     </>
   );
 }
