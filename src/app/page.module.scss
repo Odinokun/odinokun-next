@@ -16,10 +16,9 @@
   text-align: center;
 }
 
-
 .title {
   font-family: var(--font-teko), sans-serif;
-  font-size: 10.5vw;
+  font-size: 12vw;
   line-height: 1;
   margin-bottom: 0;
   user-select: none;
@@ -29,13 +28,13 @@
   color: var(--light);
 
   @include min(1024) {
-    font-size: 12vw;
+    font-size: 10.5vw;
   }
 }
 
 .subtitle {
   font-family: var(--font-kaushan), sans-serif;
-  font-size: 3vw;
+  font-size: 5vw;
   margin-bottom: 50px;
   user-select: none;
   animation: .85s fadeIn ease 1.95s forwards;
@@ -44,7 +43,7 @@
   color: var(--light);
 
   @include min(1024) {
-    font-size: 5vw;
+    font-size: 3vw;
   }
 }
 
@@ -81,9 +80,8 @@
     height: 90vh;
     margin: auto;
     opacity: .08;
-
-    stroke-width: 70px;
     stroke: var(--light);
+    stroke-width: 70px;
 
     &:nth-of-type(1) {
       transform: translateX(-100vw);
