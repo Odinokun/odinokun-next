@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { HomeIcon, CvIcon, WorksIcon, BlogIcon, ContactsIcon } from '@/common/components/NavIcons/NavIcons';
+import { HomeIcon, CvIcon, WorksIcon, BlogIcon, ContactsIcon } from '@/static/icons';
 import { IconType } from 'react-icons';
 
 interface RoutType {

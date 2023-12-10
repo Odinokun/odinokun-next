@@ -3,6 +3,8 @@
   --light: #fdf9f3;
   --grey: #808080;
   --highlight: #ffb100;
+  --shadow: 0 0 10px 5px rgba(30, 30, 30, .1);
+  --radius: 4px;
 }
 
 *,
@@ -20,18 +22,19 @@ body {
 
 html {
   font-family: var(--font-roboto), sans-serif;
-  font-size: 20px;
   font-weight: 300;
   line-height: 1.38;
   letter-spacing: .25px;
   color: var(--dark);
   background-color: var(--light);
+
+  @include responsive-font(16, 18);
 }
 
 main {
   min-height: 100vh;
   padding-left: 90px;
-  max-width: 2400px;
+  max-width: 1920px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -57,4 +60,18 @@ button {
 
 textarea {
   resize: none;
+}
+
+.wrapper {
+  padding: 0 16px;
+
+  @include min(768) {
+    padding: 0 32px
+  }
+  @include min(1024) {
+    padding: 0 64px
+  }
+  @include min(1200) {
+    padding: 0 80px
+  }
 }

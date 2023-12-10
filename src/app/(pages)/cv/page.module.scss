@@ -1,0 +1,128 @@
+@import 'src/common/styles/mixins';
+
+.cv {
+  margin-bottom: 100px;
+  padding: 60px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+
+  @include min(1440) {
+    padding: 80px;
+  }
+}
+
+.section {
+  position: relative;
+  margin-bottom: 16px;
+  padding-bottom: 36px;
+
+  &:last-child {
+    &::before {
+      display: none;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: 1px;
+    margin: auto;
+    content: '';
+    background-color: var(--highlight);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  margin-bottom: 8px;
+  text-align: center;
+
+  @include responsive-font(30, 80);
+}
+
+.subtitle {
+  font-family: var(--font-kaushan), sans-serif;
+  margin-bottom: 30px;
+  user-select: none;
+  text-align: center;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+
+  svg {
+    fill: var(--dark);
+    width: 100%;
+    transition: fill .3s ease-in-out;
+  }
+
+  &:hover {
+    svg {
+      fill: var(--highlight);
+    }
+  }
+}
+
+.location {
+  text-align: center;
+}
+
+.skills {
+  column-count: 2;
+  column-gap: 10px;
+  @include min(768) {
+    column-count: 3;
+  }
+  @include min(1200) {
+    column-gap: 20px;
+    column-count: 5;
+  }
+  @include min(1440) {
+    column-count: 7;
+  }
+}
+
+.work {
+  margin-bottom: 24px;
+
+  ul {
+    margin-bottom: 16px;
+  }
+
+  li {
+    margin-bottom: 4px;
+  }
+}
+
+.workDates {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+}
