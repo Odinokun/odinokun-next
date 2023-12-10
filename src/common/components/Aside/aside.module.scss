@@ -10,6 +10,7 @@
   width: 90px;
   height: 100vh;
   padding-top: 20px;
+  padding-bottom: 20px;
   border-right: 1px solid var(--light);
   background-color: var(--dark);
 }
@@ -17,15 +18,14 @@
 .aside__list {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .aside__item {
   display: block;
   margin-bottom: 30px;
+  padding: 0;
   user-select: none;
+  background-image: none;
 }
 
 .aside__link {

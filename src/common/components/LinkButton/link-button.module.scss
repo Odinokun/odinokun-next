@@ -50,16 +50,15 @@
   &::after {
     background-color: var(--light);
   }
+}
 
+.wrapperDark {
+  border-right-color: var(--dark);
+  border-left-color: var(--dark);
 
-  .wrapperDark {
-    border-right-color: var(--dark);
-    border-left-color: var(--dark);
-
-    &::before,
-    &::after {
-      background-color: var(--dark);
-    }
+  &::before,
+  &::after {
+    background-color: var(--dark);
   }
 }
 
