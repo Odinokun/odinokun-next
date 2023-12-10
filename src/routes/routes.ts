@@ -48,7 +48,7 @@ export const ROUTES: RoutType[] = [
     id: uuidv4(),
     path: ROUTING_PATHES.BLOG,
     label: 'Blog',
-    isAvailable: true,
+    isAvailable: false,
     icon: BlogIcon,
     isDisabled: false,
   },

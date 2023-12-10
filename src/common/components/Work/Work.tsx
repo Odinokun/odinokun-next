@@ -25,17 +25,17 @@ export const Work: FC<IProps> = ({
       rel={'noopener noreferrer nofollow'}
       className={styles.work}
     >
-      <Image src={img} alt={title} width={500} height={500} />
+      <Image src={img} alt={title} width={1500} height={1500} />
       <div className={styles.work__info}>
         <div className={styles.work__hidden}>
-        
-        <div className={styles.work__technologies}>
-          {technologies.map((t, index) => <span key={index}>{t}</span>)}
-        </div>
-        <div className={styles.work__date}>
-          <CalendarIcon />
-          {date}
-        </div>
+          
+          <div className={styles.work__technologies}>
+            {technologies.map((t, index) => <span key={index}>{t}</span>)}
+          </div>
+          <div className={styles.work__date}>
+            <CalendarIcon />
+            {date}
+          </div>
         </div>
         
         <h3 className={styles.work__title}>{title}</h3>

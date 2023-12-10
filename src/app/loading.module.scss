@@ -1,0 +1,13 @@
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--dark);
+}
+
+.loading__title {
+  font-family: var(--font-kaushan), sans-serif;
+  color: var(--light);
+}
