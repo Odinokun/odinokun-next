@@ -42,7 +42,7 @@ export const ROUTES: RoutType[] = [
     label: 'Works',
     isAvailable: true,
     icon: WorksIcon,
-    isDisabled: true,
+    isDisabled: false,
   },
   {
     id: uuidv4(),

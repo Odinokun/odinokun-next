@@ -1,8 +1,8 @@
 import { PageHeader } from '@/common/components/PageHeader/PageHeader';
-import { skillsArr } from '@/static/skills-array';
-import styles from './page.module.scss';
 import { LinkButton } from '@/common/components/LinkButton/LinkButton';
+import { skillsArr } from '@/static/skills-array';
 import { EmailIcon, GithubIcon, LinkedInIcon } from '@/static/icons';
+import styles from './page.module.scss';
 
 export default function CvPage() {
   return (
