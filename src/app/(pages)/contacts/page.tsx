@@ -1,13 +1,14 @@
 import styles from './page.module.scss';
-import { Map } from './Map/Map';
+import { CustomMap } from '@/app/(pages)/contacts/CustomMap/CustomMap';
 import { PageHeader } from '@/common/components/PageHeader/PageHeader';
 import { LinkButton } from '@/common/components/LinkButton/LinkButton';
 import { EmailIcon, GithubIcon, LinkedInIcon } from '@/static/icons';
 
-export default function ContactsPage () {
+export default function ContactsPage() {
   return (
     <div className={styles.contacts}>
-      <Map/>
+      <CustomMap />
+      
       <div className={styles.contacts__block}>
         <PageHeader title={'Contacts'} />
         <div className={styles.contacts__row}>
