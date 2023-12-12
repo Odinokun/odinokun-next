@@ -1,18 +1,51 @@
+@import 'src/common/styles/mixins';
+
 .aside {
   position: fixed;
   z-index: 10;
   top: 0;
   bottom: 0;
   left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90px;
-  height: 100vh;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-right: 1px solid var(--light);
+  pointer-events: none;
+
+  @include min(768) {
+    border-right: 1px solid var(--light);
+  }
+}
+
+.aside__inner {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 20px 5px;
+  transition: all .3s ease-in-out;
+  transform: translateX(-100vw);
+  pointer-events: auto;
+  opacity: 0;
   background-color: var(--dark);
+
+  @include min(768) {
+    width: 94px;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.aside__innerActive {
+  transform: none;
+  opacity: 1;
+}
+
+
+.aside__nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include min(768) {
+    position: static;
+    transform: none;
+  }
 }
 
 .aside__list {
@@ -22,23 +55,32 @@
 
 .aside__item {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   padding: 0;
   user-select: none;
   background-image: none;
+
+  @include min(768) {
+    margin-bottom: 30px;
+  }
 }
 
 .aside__link {
   font-family: var(--font-roboto), sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   transition: color .3s ease-in-out;
   text-decoration: none;
   letter-spacing: .5px;
   text-transform: uppercase;
   color: var(--light);
+
+  @include min(768) {
+    font-size: 15px;
+    flex-direction: column;
+  }
 
   &:hover {
     color: var(--highlight);
@@ -68,9 +110,16 @@
 
   svg {
     fill: var(--light);
-    width: 35px;
-    height: 35px;
+    width: 48px;
+    height: 48px;
+    margin-right: 24px;
     margin-bottom: 7px;
     transition: fill .3s ease-in-out;
+
+    @include min(768) {
+      width: 36px;
+      height: 36px;
+      margin-right: 0;
+    }
   }
 }

@@ -1,10 +1,27 @@
+@import '@/common/styles/mixins';
+
 .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   aspect-ratio: 1/1;
   width: 100%;
-  margin-bottom: 60px;
+  max-height: 100%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: .05;
+
+  @include min(768) {
+    position: static;
+    width: 100%;
+    margin-bottom: 60px;
+    transform: none;
+    pointer-events: auto;
+    opacity: 1;
+  }
 
   &:hover {
     svg {

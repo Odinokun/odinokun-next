@@ -2,10 +2,13 @@
 
 .cv {
   margin-bottom: 100px;
-  padding: 60px;
+  padding: 40px 24px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 
+  @include min(768) {
+    padding: 60px;
+  }
   @include min(1440) {
     padding: 80px;
   }
@@ -43,7 +46,7 @@
   margin-bottom: 8px;
   text-align: center;
 
-  @include responsive-font(30, 80);
+  @include responsive-font(36, 80);
 }
 
 .subtitle {

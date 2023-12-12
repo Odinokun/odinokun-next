@@ -34,11 +34,14 @@ html {
 
 main {
   min-height: 100vh;
-  padding-left: 90px;
   max-width: 1920px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+
+  @include min(768) {
+    padding-left: 94px;
+  }
 }
 
 svg {

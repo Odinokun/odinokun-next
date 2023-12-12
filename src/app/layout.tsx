@@ -34,10 +34,10 @@ export default function RootLayout({
         ${teko.variable}`}
     >
     <body>
-      <Aside />
-      <main>
-        {children}
-      </main>
+    <Aside />
+    <main>
+      {children}
+    </main>
     </body>
     </html>
   );
