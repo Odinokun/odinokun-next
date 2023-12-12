@@ -25,7 +25,7 @@ export const Work: FC<IProps> = ({
       rel={'noopener noreferrer nofollow'}
       className={styles.work}
     >
-      <Image src={img} alt={title} width={1500} height={1500} />
+      <Image src={img} alt={title} width={1200} height={1200} priority={true} />
       <div className={styles.work__info}>
         <div className={styles.work__hidden}>
           

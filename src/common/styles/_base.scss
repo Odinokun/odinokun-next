@@ -34,11 +34,14 @@ html {
 
 main {
   min-height: 100vh;
-  padding-left: 90px;
   max-width: 1920px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+
+  @include min(768) {
+    padding-left: 94px;
+  }
 }
 
 svg {
@@ -75,13 +78,4 @@ textarea {
   @include min(1200) {
     padding: 0 80px
   }
-}
-
-.map-container {
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 10;
-  background-color: #729;
 }

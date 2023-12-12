@@ -18,7 +18,7 @@
 
 .title {
   font-family: var(--font-teko), sans-serif;
-  font-size: 12vw;
+  font-size: 18vw;
   line-height: 1;
   margin-bottom: 0;
   user-select: none;
@@ -27,6 +27,9 @@
   opacity: 0;
   color: var(--light);
 
+  @include min(768) {
+    font-size: 12vw;
+  }
   @include min(1024) {
     font-size: 10.5vw;
   }
