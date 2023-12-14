@@ -19,7 +19,7 @@ export default function Home() {
         </svg>
       </div>
       <div className={styles.info}>
-        <h1 className={styles.title}>Dima Hordiienko</h1>
+        <h1 className={styles.title}>Dmytro Hordiienko</h1>
         <h2 className={styles.subtitle}>front-end developer</h2>
         <div className={styles.buttonWrapper}>
           <LinkButton
