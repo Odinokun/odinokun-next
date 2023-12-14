@@ -46,14 +46,19 @@ export default function CvPage() {
         <section className={styles.section}>
           <h2>Summary</h2>
           <p>I have worked as a front-end developer for 9 years, since 2014.</p>
-          <p>I have experience of working in large corporate teams and in small startups. However, despite my experience
-             in both large corporate teams and small startups, I prefer long-term working relationships and am not
-             inclined to frequently change jobs.</p>
+          <p>I have experience:</p>
+          <ul>
+            <li>of professional front end, web or mobile software development using JavaScript, HTML and CSS</li>
+            <li>of creating prototypes or wire-frames for enterprise web applications or workflows</li>
+            <li>of developing with libraries React.js, Vue.js</li>
+            <li>of working in large corporate teams and in small startups.</li>
+          </ul>
+          <p>However, despite my experience in both large corporate teams and small startups, I prefer long-term working
+             relationships and am not inclined to frequently change jobs.</p>
           <p>My superpower is the ability to transform a design of any complexity into a correctly functioning
              website.</p>
           <p>I love the frontend because new technologies appear in it every day. The work of a front-end developer was
-             very well described by Lewis Carroll
-            <q>My dear, here we must run as fast as we can, just to stay in place.
+             very well described by Lewis Carroll <q>My dear, here we must run as fast as we can, just to stay in place.
                And if you wish to go anywhere you must run twice as fast as that</q>.
           </p>
         </section>

@@ -40,6 +40,18 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  ul {
+    margin-bottom: 16px;
+  }
+
+  li {
+    margin-bottom: 4px;
+  }
+
+  q {
+    font-style: italic;
+  }
 }
 
 .title {
@@ -105,14 +117,6 @@
 
 .work {
   margin-bottom: 24px;
-
-  ul {
-    margin-bottom: 16px;
-  }
-
-  li {
-    margin-bottom: 4px;
-  }
 }
 
 .workDates {
