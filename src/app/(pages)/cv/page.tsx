@@ -10,7 +10,7 @@ export default function CvPage() {
       <PageHeader title={'My CV'} />
       <article className={styles.cv}>
         <section className={styles.section}>
-          <h1 className={styles.title}>Dima Hordiienko</h1>
+          <h1 className={styles.title}>Dmytro Hordiienko</h1>
           <h4 className={styles.subtitle}>front-end developer (React.js)</h4>
           <div className={styles.contacts}>
             <a
