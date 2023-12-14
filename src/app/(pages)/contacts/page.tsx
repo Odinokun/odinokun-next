@@ -3,6 +3,7 @@ import { CustomMap } from '@/app/(pages)/contacts/CustomMap/CustomMap';
 import { PageHeader } from '@/common/components/PageHeader/PageHeader';
 import { LinkButton } from '@/common/components/LinkButton/LinkButton';
 import { EmailIcon, GithubIcon, LinkedInIcon } from '@/static/icons';
+import { portfolioLink } from '@/static/links';
 
 export default function ContactsPage() {
   return (
@@ -39,10 +40,10 @@ export default function ContactsPage() {
           </a>
         </div>
         <LinkButton
-          href={'/'}
+          href={portfolioLink}
           title={'Download CV'}
-          btnColor={'dark'
-          }
+          btnColor={'dark'}
+          target="_blank"
         />
       </div>
     </div>

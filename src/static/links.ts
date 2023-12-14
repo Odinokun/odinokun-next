@@ -1,0 +1,1 @@
+export const portfolioLink = '/front_end_developer_Dmytro_Hordiienko.pdf';

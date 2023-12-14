@@ -1,7 +1,8 @@
 import { PageHeader } from '@/common/components/PageHeader/PageHeader';
 import { LinkButton } from '@/common/components/LinkButton/LinkButton';
-import { skillsArr } from '@/static/skills-array';
 import { EmailIcon, GithubIcon, LinkedInIcon } from '@/static/icons';
+import { skillsArr } from '@/static/skills-array';
+import { portfolioLink } from '@/static/links';
 import styles from './page.module.scss';
 
 export default function CvPage() {
@@ -144,7 +145,7 @@ export default function CvPage() {
           <p>Ukrainian, English, Russian, German</p>
           <div className={styles.buttonWrapper}>
             <LinkButton
-              href="https://www.linkedin.com/in/dmitry-gordienko/"
+              href={portfolioLink}
               title="Download cv"
               btnColor="dark"
               target="_blank"
