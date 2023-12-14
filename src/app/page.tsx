@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { LinkButton } from '@/common/components/LinkButton/LinkButton';
+import { portfolioLink } from '@/static/links';
 import styles from './page.module.scss';
 
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ export default function Home() {
         <h2 className={styles.subtitle}>front-end developer</h2>
         <div className={styles.buttonWrapper}>
           <LinkButton
-            href="https://www.linkedin.com/in/dmitry-gordienko/"
+            href={portfolioLink}
             title="Download cv"
             btnColor="light"
             target="_blank"
