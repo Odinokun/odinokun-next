@@ -3,7 +3,7 @@ import { CustomMap } from '@/app/(pages)/contacts/CustomMap/CustomMap';
 import { PageHeader } from '@/common/components/PageHeader/PageHeader';
 import { LinkButton } from '@/common/components/LinkButton/LinkButton';
 import { EmailIcon, GithubIcon, LinkedInIcon } from '@/static/icons';
-import { portfolioLink } from '@/static/links';
+import { emailLink, githubLink, linkedinLink, portfolioLink } from '@/static/links';
 
 export default function ContactsPage() {
   return (
@@ -14,14 +14,14 @@ export default function ContactsPage() {
         <PageHeader title={'Contacts'} />
         <div className={styles.contacts__row}>
           <a
-            href={'mailto:odinokun@gmail.com'}
+            href={emailLink}
             title={'E-mail'}
             className={styles.contacts__link}
           >
             <EmailIcon />
           </a>
           <a
-            href={'https://www.linkedin.com/in/dmitry-gordienko'}
+            href={linkedinLink}
             target={'_blank'}
             rel={'noopener noreferrer nofollow'}
             title={'LinkedIn'}
@@ -30,7 +30,7 @@ export default function ContactsPage() {
             <LinkedInIcon />
           </a>
           <a
-            href={'https://github.com/Odinokun'}
+            href={githubLink}
             target={'_blank'}
             rel={'noopener noreferrer nofollow'}
             title={'Github'}

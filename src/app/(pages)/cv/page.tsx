@@ -2,7 +2,7 @@ import { PageHeader } from '@/common/components/PageHeader/PageHeader';
 import { LinkButton } from '@/common/components/LinkButton/LinkButton';
 import { EmailIcon, GithubIcon, LinkedInIcon } from '@/static/icons';
 import { skillsArr } from '@/static/skills-array';
-import { portfolioLink } from '@/static/links';
+import { emailLink, githubLink, linkedinLink, portfolioLink } from '@/static/links';
 import styles from './page.module.scss';
 
 export default function CvPage() {
@@ -15,14 +15,14 @@ export default function CvPage() {
           <h4 className={styles.subtitle}>front-end developer (React.js)</h4>
           <div className={styles.contacts}>
             <a
-              href={'mailto:odinokun@gmail.com'}
+              href={emailLink}
               title={'E-mail'}
               className={styles.contact}
             >
               <EmailIcon />
             </a>
             <a
-              href={'https://www.linkedin.com/in/dmitry-gordienko'}
+              href={linkedinLink}
               target={'_blank'}
               rel={'noopener noreferrer nofollow'}
               title={'LinkedIn'}
@@ -31,7 +31,7 @@ export default function CvPage() {
               <LinkedInIcon />
             </a>
             <a
-              href={'https://github.com/Odinokun'}
+              href={githubLink}
               target={'_blank'}
               rel={'noopener noreferrer nofollow'}
               title={'Github'}
