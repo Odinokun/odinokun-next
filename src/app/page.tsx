@@ -1,12 +1,6 @@
-import { Metadata } from 'next';
 import { LinkButton } from '@/common/components/LinkButton/LinkButton';
 import { portfolioLink } from '@/static/links';
 import styles from './page.module.scss';
-
-export const metadata: Metadata = {
-  title: 'Odinokun',
-  description: 'Odinokun`s personal website',
-};
 
 export default function Home() {
   return (
@@ -20,7 +14,7 @@ export default function Home() {
         </svg>
       </div>
       <div className={styles.info}>
-        <h1 className={styles.title}>Dmytro Hordiienko</h1>
+        <h1 className={styles.title}>Dima Hordiienko</h1>
         <h2 className={styles.subtitle}>front-end developer</h2>
         <div className={styles.buttonWrapper}>
           <LinkButton
