@@ -1,6 +1,6 @@
 'use client';
 
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -20,9 +20,6 @@ export const Aside: FC = () => {
   const onClickHandler = () => {
     setIsOpen(prev => !prev);
   };
-  useEffect(() => {
-    setIsOpen(prev => !prev);
-  }, []);
   
   return (
     <>
