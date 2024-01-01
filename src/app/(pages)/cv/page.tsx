@@ -48,19 +48,11 @@ export default function CvPage() {
           <p>I have worked as a front-end developer for 9 years, since 2014.</p>
           <p>I have experience:</p>
           <ul>
-            <li>of professional front end, web or mobile software development using JavaScript, HTML and CSS</li>
-            <li>of creating prototypes or wire-frames for enterprise web applications or workflows</li>
-            <li>of developing with libraries React.js, Vue.js</li>
-            <li>of working in large corporate teams and in small startups.</li>
+            <li>of professional front end, web or mobile software development using JavaScript, HTML and CSS;</li>
+            <li>of creating prototypes or wire-frames for enterprise web applications or workflows;</li>
+            <li>of developing with libraries React.js, Next.js, Vue.js;</li>
           </ul>
-          <p>However, despite my experience in both large corporate teams and small startups, I prefer long-term working
-             relationships and am not inclined to frequently change jobs.</p>
-          <p>My superpower is the ability to transform a design of any complexity into a correctly functioning
-             website.</p>
-          <p>I love the frontend because new technologies appear in it every day. The work of a front-end developer was
-             very well described by Lewis Carroll <q>My dear, here we must run as fast as we can, just to stay in place.
-               And if you wish to go anywhere you must run twice as fast as that</q>.
-          </p>
+          <p>I am an adaptable, innovative, reliable and responsible developer. Also I am a self-learner, problem solver and am not inclined to frequently change jobs.</p>
         </section>
         
         <section className={styles.section}>
@@ -77,7 +69,7 @@ export default function CvPage() {
           
           <section className={styles.work}>
             <h4>Metame</h4>
-            <p className={styles.workDates}>2022 - 2023</p>
+            <p className={styles.workDates}>Aug 2022 - Nov 2023</p>
             <a
               href={'https://www.metamenft.io'}
               target={'_blank'}
@@ -86,16 +78,17 @@ export default function CvPage() {
             <p>A platform that specializes in the creation and sale of NFT tokens, unique digital assets based on the
                blockchain</p>
             <a
-              href={'/'}
+              href={portfolioLink}
               target={'_blank'}
               rel={'noopener noreferrer nofollow'}
             >
               More in my CV...
             </a>
           </section>
+          
           <section className={styles.work}>
             <h4>EpicentrK</h4>
-            <p className={styles.workDates}>2020 - 2022</p>
+            <p className={styles.workDates}>Dec 2020 - July 2022</p>
             <a
               href={'https://epicentrk.ua'}
               target={'_blank'}
@@ -105,26 +98,33 @@ export default function CvPage() {
                own a network of big supermarkets and a big online store
             </p>
             <a
-              href={'/'}
+              href={portfolioLink}
               target={'_blank'}
               rel={'noopener noreferrer nofollow'}
             >
               More in my CV...
             </a>
           </section>
+          
           <section className={styles.work}>
-            <h4>Self employed</h4>
-            <p className={styles.workDates}>2014 - 2020</p>
-            <p>Created over 150 websites of different levels of complexity:</p>
-            <ul>
-              <li>landing pages</li>
-              <li>email campaigns</li>
-              <li>big corporate sites</li>
-              <li>online stores</li>
-            </ul>
-            <p>I also provided technical support and optimization for existing websites.</p>
+            <h4>Krasnyk Studio</h4>
+            <p className={styles.workDates}>Apr 2017 - Nov 2020</p>
+            <p>Web development company</p>
             <a
-              href={'/'}
+              href={portfolioLink}
+              target={'_blank'}
+              rel={'noopener noreferrer nofollow'}
+            >
+              More in my CV...
+            </a>
+          </section>
+          
+          <section className={styles.work}>
+            <h4>MostOfDesign Studio</h4>
+            <p className={styles.workDates}>Oct 2014 - Apr 2017</p>
+            <p>Web development company</p>
+            <a
+              href={portfolioLink}
               target={'_blank'}
               rel={'noopener noreferrer nofollow'}
             >
@@ -135,12 +135,12 @@ export default function CvPage() {
         
         <section className={styles.section}>
           <h2>Education</h2>
-          <p>Kyiv University of Tourism, Economics and Law (Ukraine) - <strong>Bachelor`s degree</strong> in law</p>
+          <p>Kyiv University of Tourism, Economics and Law (Ukraine) - <strong>Bachelor`s degree</strong></p>
         </section>
         
         <section className={styles.section}>
           <h2>Additional coursesAdditional courses</h2>
-          <p>React Developer Course (IT Incubator School) - in progress</p>
+          <p>React Developer Course (IT Incubator School)</p>
           <p>Complete JavaScript Course (Loftschool)</p>
           <p>Web Development for Advanced (Loftschool)</p>
         </section>
