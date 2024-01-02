@@ -50,16 +50,29 @@ export const works: IWorks[] = [
   },
   {
     id: v1(),
-    img: '/works/adapwork.jpg',
-    title: 'Adapwork',
-    date: 'January 2024',
-    link: 'https://adapwork.com/',
+    img: '/works/rockland.jpg',
+    title: 'Rockland',
+    date: 'November 2020',
+    link: 'https://rocklandbeauty.com/',
     technologies: [
       'Pug + BEM',
       'Scss',
       'JS + Jquery',
-      'GSAP',
+      'Animate.css',
     ],
   },
+  // {
+  //   id: v1(),
+  //   img: '/works/adapwork.jpg',
+  //   title: 'Adapwork',
+  //   date: 'January 2024',
+  //   link: 'https://adapwork.com/',
+  //   technologies: [
+  //     'Pug + BEM',
+  //     'Scss',
+  //     'JS + Jquery',
+  //     'GSAP',
+  //   ],
+  // },
 ];
   
