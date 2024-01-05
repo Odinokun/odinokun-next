@@ -49,8 +49,9 @@ export default function CvPage() {
           <p>I have experience:</p>
           <ul>
             <li>of professional front end, web or mobile software development using JavaScript, HTML and CSS;</li>
-            <li>of creating prototypes or wire-frames for enterprise web applications or workflows;</li>
+            <li>of coding the websites and web applications layout based on the provided design mockup;</li>
             <li>of developing with libraries React.js, Next.js, Vue.js;</li>
+            <li>of developing with animation libraries like GSAP and Three,js;</li>
           </ul>
           <p>I am an adaptable, innovative, reliable and responsible developer. Also I am a self-learner, problem solver and am not inclined to frequently change jobs.</p>
         </section>
