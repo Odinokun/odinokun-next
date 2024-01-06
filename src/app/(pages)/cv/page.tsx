@@ -109,8 +109,14 @@ export default function CvPage() {
           
           <section className={styles.work}>
             <h4>Krasnyk Studio</h4>
+            <a
+              href={'https://krasnykstudio.com.ua/en/home-eng/'}
+              target={'_blank'}
+              rel={'noopener noreferrer nofollow'}
+            >(https://krasnykstudio.com.ua)</a>
             <p className={styles.workDates}>Apr 2017 - Nov 2020</p>
-            <p>Web development company</p>
+            <p>A dynamic web design studio, crafting user-centric websites. Innovative, responsive designs tailored to
+               elevate diverse digital experiences.</p>
             <a
               href={portfolioLink}
               target={'_blank'}
@@ -122,8 +128,14 @@ export default function CvPage() {
           
           <section className={styles.work}>
             <h4>MostOfDesign Studio</h4>
+            <a
+              href={'https://www.facebook.com/mostofdesign/'}
+              target={'_blank'}
+              rel={'https://facebook.com/mostofdesign'}
+            >(https://epicentrk.ua)</a>
             <p className={styles.workDates}>Oct 2014 - Apr 2017</p>
-            <p>Web development company</p>
+            <p>Creative web design studio crafting captivating, user-centric websites. Innovative, responsive designs
+               tailored to elevate digital experiences across diverse industries.</p>
             <a
               href={portfolioLink}
               target={'_blank'}
