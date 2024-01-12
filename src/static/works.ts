@@ -2,6 +2,7 @@ import { v1 } from 'uuid';
 
 interface IWorks {
   id: string;
+  bgImg: string;
   img: string;
   title: string;
   date: string;
@@ -12,6 +13,7 @@ interface IWorks {
 export const works: IWorks[] = [
   {
     id: v1(),
+    bgImg: '/works/profilance-min.jpg',
     img: '/works/profilance.jpg',
     title: 'Profilance',
     date: 'November 2023',
@@ -24,6 +26,7 @@ export const works: IWorks[] = [
   },
   {
     id: v1(),
+    bgImg: '/works/metame-min.jpg',
     img: '/works/metame.jpg',
     title: 'Metame',
     date: '2022 - 2023',
@@ -38,6 +41,7 @@ export const works: IWorks[] = [
   },
   {
     id: v1(),
+    bgImg: '/works/4-deluxe-min.jpg',
     img: '/works/4-deluxe.jpg',
     title: '4-Deluxe',
     date: 'June 2018',
@@ -50,6 +54,7 @@ export const works: IWorks[] = [
   },
   {
     id: v1(),
+    bgImg: '/works/rockland-min.jpg',
     img: '/works/rockland.jpg',
     title: 'Rockland',
     date: 'November 2020',

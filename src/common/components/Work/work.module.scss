@@ -8,6 +8,10 @@
   max-height: calc(50vh - 120px);
   transition: box-shadow .3s ease-in-out;
   border-radius: var(--radius);
+  background-color: var(--grey);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
   box-shadow: var(--shadow);
 
   @include min(1200) {
