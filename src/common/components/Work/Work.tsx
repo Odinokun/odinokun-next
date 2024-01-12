@@ -4,6 +4,7 @@ import { CalendarIcon } from '@/static/icons';
 import styles from './work.module.scss';
 
 interface IProps {
+  bgImg: string;
   img: string;
   title: string;
   date: string;
@@ -12,6 +13,7 @@ interface IProps {
 }
 
 export const Work: FC<IProps> = ({
+  bgImg,
   img,
   title,
   date,
@@ -24,8 +26,9 @@ export const Work: FC<IProps> = ({
       target={'_blank'}
       rel={'noopener noreferrer nofollow'}
       className={styles.work}
+      style={{ backgroundImage: `url(${bgImg})` }}
     >
-      <Image src={img} alt={title} width={1200} height={1200} priority={true} />
+      <Image src={img} alt={title} width={1200} height={1200} />
       <div className={styles.work__info}>
         <div className={styles.work__hidden}>
           

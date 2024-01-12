@@ -11,6 +11,7 @@ export default function WorksPage () {
         {
           works.map(w => <Work
             key={w.id}
+            bgImg={w.bgImg}
             img={w.img}
             title={w.title}
             date={w.date}
